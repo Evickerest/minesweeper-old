@@ -1,0 +1,35 @@
+:root{
+    --tile-width: 6;
+}
+
+body {
+    user-select: none; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+.tile {
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+    background-color: #e0dfdf;
+    border: 1px solid #777;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.cleared {
+    background-color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(var(--tile-width), 50px);
+}
+
+button {
+    margin-bottom: 10px;
+}
